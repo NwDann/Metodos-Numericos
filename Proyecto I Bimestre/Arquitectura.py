@@ -17,6 +17,7 @@ def root(x1, x2, h):
     try:
         root = bisect(w, a = a, b = b)
         return root
+    
     except:
         return None
     
@@ -41,7 +42,7 @@ while True:
 
 root = root(x1, x2, h)
 if root:
-    print(f"El valor en metros de la distancia o ancho del pasillo para las escaleras y su altura es: {round(root, 2)}")
+    print(f"El valor en metros de la distancia o ancho del pasillo para las escaleras y su altura es: {round(root, 2)} [m]")
     
 else:
     print("No se encontro solución alguna")
